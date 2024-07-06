@@ -22,10 +22,12 @@ root.render(
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/About' element={<About />}></Route>
-        <Route path='/Product' element={<Product />}></Route>
-        <Route path='/Product/List' element={<ProductList />}></Route>
-        <Route path='/Product/Details' element={<ProductDetails />}></Route>
-        <Route path='/Product/Create' element={<CreateProduct />}></Route>
+        <Route path='Product'>
+          <Route path='' element={<Product />}></Route>
+          <Route path='List' element={<ProductList />}></Route>
+          <Route path='Details' element={<ProductDetails />}></Route>
+          <Route path='Create' element={<CreateProduct />}></Route>
+        </Route>
       </Routes>
       <Footer />
     </BrowserRouter>
