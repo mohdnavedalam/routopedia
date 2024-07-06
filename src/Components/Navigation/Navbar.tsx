@@ -2,6 +2,7 @@ import React from "react";
 import DropdownLink from "../Dropdowns/DropdownLink";
 import DropdownButton from "../Dropdowns/DropdownButton";
 import DropdownSelect from "../Dropdowns/DropdownSelect";
+import { Link } from "react-router-dom";
 const Navbar = () => {
     return (
         <nav className="navbar navbar-dark navbar-expand-lg bg-dark mt-3">
@@ -13,10 +14,10 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="/">Home</a>
+                            <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/About">About</a>
+                            <Link className="nav-link" to="/About">About</Link>
                         </li>
                         <li className="nav-item">
                             <DropdownLink />
