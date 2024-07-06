@@ -1,7 +1,7 @@
 import React from "react";
-import DropdownLink from "./Dropdowns/DropdownLink";
-import DropdownButton from "./Dropdowns/DropdownButton";
-import DropdownSelect from "./Dropdowns/DropdownSelect";
+import DropdownLink from "../Dropdowns/DropdownLink";
+import DropdownButton from "../Dropdowns/DropdownButton";
+import DropdownSelect from "../Dropdowns/DropdownSelect";
 const Navbar = () => {
     return (
         <nav className="navbar navbar-dark navbar-expand-lg bg-dark mt-3">
