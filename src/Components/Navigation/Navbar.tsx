@@ -20,6 +20,9 @@ const Navbar = () => {
                             <Link className="nav-link" to="/About">About</Link>
                         </li>
                         <li className="nav-item">
+                            <Link className="nav-link" to="/CryptoDetail/BTC/32">Crypto Detail</Link>
+                        </li>
+                        <li className="nav-item">
                             <DropdownLink />
                         </li>
                         {/* <li className="nav-item">
