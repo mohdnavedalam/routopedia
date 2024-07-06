@@ -8,10 +8,10 @@ const DropdownLink = () => {
             </a>
             <ul className="dropdown-menu">
                 <li><Link className="dropdown-item" to="/Product">Product</Link></li>
-                <li><Link className="dropdown-item" to="/ProductList">Product List</Link></li>
-                <li><Link className="dropdown-item" to="/ProductDetails">Product Details</Link></li>
+                <li><Link className="dropdown-item" to="/Product/List">Product List</Link></li>
+                <li><Link className="dropdown-item" to="/Product/Details">Product Details</Link></li>
                 <li><hr className="dropdown-divider" /></li>
-                <li><Link className="dropdown-item" to="CreateProduct">Create Product</Link></li>
+                <li><Link className="dropdown-item" to="/Product/Create">Create Product</Link></li>
             </ul>
         </div>
     );
