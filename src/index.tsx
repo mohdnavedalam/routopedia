@@ -10,6 +10,7 @@ import Product from './Pages/Product';
 import ProductList from './Pages/ProductList';
 import ProductDetails from './Pages/ProductDetails';
 import CreateProduct from './Pages/CreateProduct';
+import NotFound from './Pages/NotFound';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
@@ -29,6 +30,7 @@ root.render(
           <Route path='Details' element={<ProductDetails />}></Route>
           <Route path='Create' element={<CreateProduct />}></Route>
         </Route>
+        <Route path='*' element={<NotFound />}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>
