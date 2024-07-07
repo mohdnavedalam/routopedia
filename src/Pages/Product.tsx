@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Product = () => {
     const navigate = useNavigate();
@@ -7,6 +7,10 @@ const Product = () => {
         <div>Product</div>
         <div>
             <button onClick={() => {navigate("/Product/Create")}}>Add Product</button>
+            <br />
+            <Link to={`/Product/Details/5`}>
+                <button>Navigate to Product Details - 5</button>
+            </Link>
         </div>
         </>
     );
