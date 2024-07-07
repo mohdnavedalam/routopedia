@@ -25,12 +25,12 @@ root.render(
         <Route path='/About' element={<About />}></Route>
         <Route path='/CryptoDetail/:cryptosymbol/:id' element={<CryptoDetail />}></Route>
         <Route path='/CryptoDetail/:cryptosymbol' element={<CryptoDetail />}></Route>
-        <Route path='Product'>
+        <Route path='/Product'>
           <Route path='' element={<Product />}></Route>
           {/* <Route index element={<Product />}></Route> */}
           <Route path='List' element={<ProductList />}></Route>
           <Route path='Details/:id' element={<ProductDetails />}></Route>
-          <Route path='Details/' element={<ProductDetails />}></Route>
+          <Route path='Details' element={<ProductDetails />}></Route>
           <Route path='Create' element={<CreateProduct />}></Route>
         </Route>
         <Route path='*' element={<NotFound />}></Route>
