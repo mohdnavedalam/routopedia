@@ -37,3 +37,15 @@
 .image-border-red {
     border: 1px solid red;
 }
+
+.navbar-dropdown:active {
+    color: #0DCAF0;
+}
+
+.nav-link:active {
+    color: #0DCAF0;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #0DCAF0;
+}

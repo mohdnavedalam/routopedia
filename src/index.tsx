@@ -17,8 +17,8 @@ const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
   <div>
     <BrowserRouter>
-      <Header />
-      <Navbar />
+      <Header/>
+      <Navbar/>
 
       <Routes>
         <Route path='/' element={<Home />}></Route>

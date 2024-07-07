@@ -1,8 +1,5 @@
-import React from "react";
 import DropdownLink from "../Dropdowns/DropdownLink";
-import DropdownButton from "../Dropdowns/DropdownButton";
-import DropdownSelect from "../Dropdowns/DropdownSelect";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
     return (
         <nav className="navbar navbar-dark navbar-expand-lg bg-dark">
@@ -14,16 +11,16 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+                            <NavLink className={({ isActive }) => isActive ? 'nav-link active link-info' : 'nav-link'} aria-current="page" to="/">Home</NavLink>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/About">About</Link>
+                            <NavLink className={({ isActive }) => isActive ? 'nav-link active link-info' : 'nav-link'} to="/About">About</NavLink>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/CryptoDetail/BTC/32">Crypto Detail</Link>
+                            <NavLink className={({ isActive }) => isActive ? 'nav-link link-info' : 'nav-link'} to="/CryptoDetail/BTC/32">Crypto Detail</NavLink>
                         </li>
                         <li className="nav-item">
-                            <DropdownLink />
+                                <DropdownLink />
                         </li>
                         {/* <li className="nav-item">
                             <DropdownButton />

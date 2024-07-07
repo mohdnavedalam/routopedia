@@ -1,3 +1,4 @@
+import '../../CSS/style.css';
 import { Link } from "react-router-dom";
 
 const DropdownLink = () => {
@@ -7,11 +8,11 @@ const DropdownLink = () => {
                 Products
             </a>
             <ul className="dropdown-menu">
-                <li><Link className="dropdown-item" to="/Product">Product</Link></li>
-                <li><Link className="dropdown-item" to="/Product/List">Product List</Link></li>
-                <li><Link className="dropdown-item" to="/Product/Details">Product Details</Link></li>
+                <li><Link className="dropdown-item" to="#">Product</Link></li>
+                <li><Link className="dropdown-item" to="#">Product List</Link></li>
+                <li><Link className="dropdown-item" to="#">Product Details</Link></li>
                 <li><hr className="dropdown-divider" /></li>
-                <li><Link className="dropdown-item" to="/Product/Create">Create Product</Link></li>
+                <li><Link className="dropdown-item" to="#">Create Product</Link></li>
             </ul>
         </div>
     );
